@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #566275;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.meteoController">
+   <children>
+      <AnchorPane layoutX="-4.0" prefHeight="114.0" prefWidth="606.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Text fx:id="meteo" fill="#566275" layoutX="222.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" style="visibility: #566275;" text="Meteo">
+               <font>
+                  <Font name="Lucida Calligraphy Italic" size="50.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-31.0" layoutY="-36.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img" fitHeight="49.0" fitWidth="66.0" layoutX="18.0" layoutY="14.0">
+               <image>
+                  <Image url="@ico3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="getData" layoutX="221.0" layoutY="339.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #499cd7;" text="Afisare">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor></Button>
+      <Text fx:id="info" fill="#499cd7" layoutX="230.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informatie :" wrappingWidth="140.6015625">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_1" layoutX="229.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperatura :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_2" layoutX="229.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atmosfera :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_3" layoutX="229.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximul :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="temp_4" layoutX="229.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minimul :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="city" layoutX="212.0" layoutY="126.0" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: #566275; -fx-border-color: silver; -fx-border-radius: 7;">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

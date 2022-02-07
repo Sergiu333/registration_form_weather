@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #566275;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appController">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="98.0" prefWidth="600.0" style="-fx-background-color: #2E3348;">
+         <children>
+            <Text fx:id="textB" fill="#566275" layoutX="236.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIZZARO" wrappingWidth="127.01806640625">
+               <font>
+                  <Font name="Onyx" size="60.0" />
+               </font>
+            </Text>
+            <Text fx:id="appUserHello" layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children></AnchorPane>
+      <Arc fill="DODGERBLUE" layoutX="315.0" layoutY="237.0" length="270.0" radiusX="100.0" radiusY="100.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+   </children>
+</AnchorPane>
